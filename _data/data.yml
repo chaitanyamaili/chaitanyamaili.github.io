@@ -14,9 +14,9 @@ sidebar:
     # Sidebar links
     email: chaitanya.maili@gmail.com
     phone: +91-9902873567
-    citizenship:
+    citizenship: India
     # website: blog.webjeda.com #do not add http://
-    linkedin: https://www.linkedin.com/in/chaitanyamaili/
+    linkedin: chaitanyamaili
     # xing: alandoe
     github: chaitanyamaili
     telegram: # add your nickname without '@' sign
@@ -144,7 +144,7 @@ publications:
         link: "https://www.coursera.org/account/accomplishments/verify/K52Y9YM2BCM7?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
         authors: Coursera
 
-skills:
+technical_skills:
     title: Technical Skills &amp; Proficiency
 
     toolset:
@@ -166,7 +166,7 @@ skills:
       - name: Virtualization using docker, vagrant
         level: 60%
 
-skills:
+soft_skills:
     title: Soft Skills &amp; Proficiency
 
     toolset:
