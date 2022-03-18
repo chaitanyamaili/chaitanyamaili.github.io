@@ -98,74 +98,89 @@ experiences:
       company: PRED Solutions
 projects:
     title: Projects
-    intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    # intro: >
+    #   You can list your side projects or open source libraries in this
+    #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: "AAMC.org"
+        # link: "#hook"
+        tagline: "Developed the AAMC.org corporate website using Drupal 8/9 and Acquia infrastucture, by building various content types, migrated the content from legagcy systems like CoreMedia and Django, datastudio report to track the document usage using GA, search system using Solr implementation and also integrated the page count using GA."
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+      - title: "AAMC internal microsite platform"
+        # link: "#"
+        tagline: "Build a internal platform using Drupal 9 to host multiple small sites using the domain access module and various customiziations by providing preset color theme, site specific assests like logo, GA code, etc."
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: "Adways | internal portal"
+        tagline: "Build and maintained internal portal to publish and manage the campaings and also had a backend REST APIs to serve and track the campaigns to and from the android mobile application."
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title: "Homelane | Internal Product (Pricing Engine)"
+        tagline: "This product is the Catalog management system, it also has the REST API to feed inputs to Sketchup modules and other systems to get a quote, it has the pricing logic, its has the quote versioning logic, its had several reports against the quote for the customer, all the artifacts were uploaded to s3 buckets so that other systems can pull the same one."
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - title: "Homelane | Internal Product (Managed Admin)"
+        tagline: "This product will help ZipDial internal team to deliver and configure the campaigns, configure the reports and KPI’s, manage customers, users, orders and offline payment."
+
+      - title: "Locum"
+        tagline: "This product will help Post the Job, apply for the job, create slots, view the slots on the Calendar and book them, and according to the Contract and agreed Payment Term the Invoices are generated, there is also an option to the Generate various type of Reports."
+
+      - title: "Coral Technologies.co.uk"
+        tagline: "Coral Technologies was established in 2011 with a clear set of guiding principles. Our primary aim was to provide a highly cost-effective online resource for legal and medical professionals working in the accident and injury claims sector"
+
+      - title: "Dining Circle.com"
+        tagline: "Its an online tool, which help the restaurants to manage there reservations and guests."
 
 publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+    title: Licenses &amp; certificationsLicenses
+    # intro: |
+    #   You can list your publications in this section. Lorem ipsum dolor sit
+    #   amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    #   bibendum fringilla a eu lectus.
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
-
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: "AWS Certified Cloud Practitioner"
+        link: "https://www.credly.com/badges/4a7ded78-5239-46cd-80a0-171f1c4b186d?source=website"
+        authors: Amazon Web Services (AWS)
+        
+      - title: "Version Control using Git"
+        link: "https://www.coursera.org/account/accomplishments/verify/K52Y9YM2BCM7?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+        authors: Coursera
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Technical Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
+      - name: PHP
+        level: 90%
 
-      - name: Javascript & jQuery
-        level: 98%
+      - name: MySQL
+        level: 90%
 
-      - name: Angular
-        level: 98%
+      - name: AWS
+        level: 60%
 
-      - name: HTML5 & CSS
+      - name: REST
         level: 95%
 
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
+      - name: Git
         level: 60%
+
+      - name: Virtualization using docker, vagrant
+        level: 60%
+
+skills:
+    title: Soft Skills &amp; Proficiency
+
+    toolset:
+      - name: Requirements Gathering
+        level: 80%
+
+      - name: Release management
+        level: 80%
+
+      - name: Streamlining process
+        level: 80%
+
+      - name: Leadership quality
+        level: 75%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
