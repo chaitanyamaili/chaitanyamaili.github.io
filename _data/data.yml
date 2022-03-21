@@ -14,12 +14,12 @@ sidebar:
     # Sidebar links
     email: chaitanya.maili@gmail.com
     phone: +91-9902873567
-    citizenship: India
+    citizenship: Bangalore, India
     # website: blog.webjeda.com #do not add http://
     linkedin: chaitanyamaili
     # xing: alandoe
     github: chaitanyamaili
-    telegram: # add your nickname without '@' sign
+    telegram: chaitanyamaili # add your nickname without '@' sign
     # gitlab:
     # bitbucket:
     # twitter: '@webjeda'
@@ -130,7 +130,7 @@ projects:
         tagline: "Its an online tool, which help the restaurants to manage there reservations and guests."
 
 publications:
-    title: Licenses &amp; certificationsLicenses
+    title: Licenses &amp; certifications
     # intro: |
     #   You can list your publications in this section. Lorem ipsum dolor sit
     #   amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
