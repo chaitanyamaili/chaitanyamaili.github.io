@@ -168,8 +168,14 @@ technical_skills:
       - name: MySQL
         level: 90%
 
-      - name: AWS
+      - name: Go
+        level: 50%
+
+      - name: GCP
         level: 60%
+
+      - name: AWS
+        level: 50%
 
       - name: REST
         level: 95%
