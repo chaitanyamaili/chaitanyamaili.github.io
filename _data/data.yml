@@ -8,7 +8,7 @@ sidebar:
 
     # Profile information
     name: Chaitanya C Maili
-    tagline: Technical Architect
+    tagline: Technical Architect | Cloud Native Solutions
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -55,47 +55,58 @@ education:
       university: Dr. Babasaheb Ambedkar Marathwada University of London
       
 experiences:
-    - role: Technical Architect
-      time: Jun 2018 - Present
-      company: Mindtree
-      details: |
-        Leading the team of 10+ members team in Drupal 8/9 with cutting edge technology like Drupal VM/Docksal, Acquia BLT, Solr search. Responsible for visual regression as CI using node modules, integrated phpmd in CI, migration of legacy site into Drupal, developed google data studio report.
-          - Drupal 9
-          - Acquia BLT
-          - Acquia Solr 7
-          - Driving the sprint deliverables using scrum
-    - role: Tech Lead
-      time: Aug 2016 - Apr 2018
-      company: Adways Innovations India
-      details: |
-        Development and maintenance of Scaleable REST Apis, Dashboard tool for Ops, cron jobs and also take part in third party apis integrations in the system.
-          - Codeignator Framework
-          - REST API
-          - Third party APIs integrations
-          - AWS auto scaling architecture
-    - role: Senior Software Engineer
-      time: Feb 2015 - Aug 2016
-      company: HomeLane
-      details: |
-        Responsible for the Pricing Engine application enhancements and maintenance, also do the Dev Ops works.
-          - CakePHP Framework
-          - Build REST APIs for the pricing engine
-    - role: Senior Software Engineer
-      time: Apr 2014 - Jan 2015
-      company: ZipDial Mobile Solution
-      details: |
-        Responsibilities includes development and supporting the internal product (Managed Admin)
-          - CakePHP Framework
-          - Build an admin interface to manage the campaign for the ops team.
-    - role: Senior Software Engineer
-      time: Mar 2011 - May 2014
-      company: StrApp Business Solution Pvt Ltd
-    - role: PHP Developer
-      time: Jun 2010 - Mar 2011
-      company: Snyxius
-    - role: Web Developer
-      time: Jul 2009 - Jun 2010
-      company: PRED Solutions
+  - role: Senior Software Enginner
+    time: Jun 2022 - Present
+    company: Pantheon India Platform
+    details: |
+      Part of backend team responsible for micro-services and the infrastructure, used to manage and orchestrate the customer infrastructure. Introduced the monorepo tagging strategy to ease release procress, also setup the process to do the customer infrastructire roll out using microservice.
+        - GraphQL
+        - Google Cloud Platform (GCP)
+        - Go (Programming Language)
+        - Terraform
+        - Docker
+        - Github
+  - role: Technical Architect
+    time: Jun 2018 - May 2022
+    company: Mindtree
+    details: |
+      Leading the team of 10+ members team in Drupal 8/9 with cutting edge technology like Drupal VM/Docksal, Acquia BLT, Solr search. Responsible for visual regression as CI using node modules, integrated phpmd in CI, migration of legacy site into Drupal, developed google data studio report.
+        - Drupal 9
+        - Acquia BLT
+        - Acquia Solr 7
+        - Driving the sprint deliverables using scrum
+  - role: Tech Lead
+    time: Aug 2016 - Apr 2018
+    company: Adways Innovations India
+    details: |
+      Development and maintenance of Scaleable REST Apis, Dashboard tool for Ops, cron jobs and also take part in third party apis integrations in the system.
+        - Codeignator Framework
+        - REST API
+        - Third party APIs integrations
+        - AWS auto scaling architecture
+  - role: Senior Software Engineer
+    time: Feb 2015 - Aug 2016
+    company: HomeLane
+    details: |
+      Responsible for the Pricing Engine application enhancements and maintenance, also do the Dev Ops works.
+        - CakePHP Framework
+        - Build REST APIs for the pricing engine
+  - role: Senior Software Engineer
+    time: Apr 2014 - Jan 2015
+    company: ZipDial Mobile Solution
+    details: |
+      Responsibilities includes development and supporting the internal product (Managed Admin)
+        - CakePHP Framework
+        - Build an admin interface to manage the campaign for the ops team.
+  - role: Senior Software Engineer
+    time: Mar 2011 - May 2014
+    company: StrApp Business Solution Pvt Ltd
+  - role: PHP Developer
+    time: Jun 2010 - Mar 2011
+    company: Snyxius
+  - role: Web Developer
+    time: Jul 2009 - Jun 2010
+    company: PRED Solutions
 projects:
     title: Projects
     # intro: >
@@ -103,6 +114,9 @@ projects:
     #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
+      - title: "Decoupled backend microservices and infrastructure"
+        # link: "#hook"
+        tagline: "Part of backend team responsible for micro-services and the infrastructure, used to manage and orchestrate the customer infrastructure. Introduced the monorepo tagging strategy to ease release procress, also setup the process to do the customer infrastructire roll out using microservice."
       - title: "AAMC.org"
         # link: "#hook"
         tagline: "Developed the AAMC.org corporate website using Drupal 8/9 and Acquia infrastucture, by building various content types, migrated the content from legagcy systems like CoreMedia and Django, datastudio report to track the document usage using GA, search system using Solr implementation and also integrated the page count using GA."
