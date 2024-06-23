@@ -19,7 +19,7 @@ sidebar:
     linkedin: chaitanyamaili
     # xing: alandoe
     github: chaitanyamaili
-    telegram: chaitanyamaili # add your nickname without '@' sign
+    # telegram: chaitanyamaili # add your nickname without '@' sign
     # gitlab:
     # bitbucket:
     # twitter: '@webjeda'
@@ -48,24 +48,27 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      12 years of IT experience in Technology with a range of experience in design, development and coding complex scalable Web Applications, REST Apis in areas like Digital Marketing, Insurance, Furniture, Mobile Marketing, Microsites platform and Corporate sites.
+      13+ years of IT experience in Technology with a range of experience in design, development and coding complex scalable Web Applications, REST Apis in areas like Digital Marketing, Insurance, Furniture, Mobile Marketing, Microsites platform and Corporate sites.
       AWS Certified Cloud Practitioner.
 education:
     - degree: BE in Computer Science
-      university: Dr. Babasaheb Ambedkar Marathwada University of London
+      university: Dr. Babasaheb Ambedkar Marathwada University of Aurangabad
       
 experiences:
   - role: Senior Software Enginner
     time: Jun 2022 - Present
     company: Pantheon India Platform
     details: |
-      Part of backend team responsible for micro-services and the infrastructure, used to manage and orchestrate the customer infrastructure. Introduced the monorepo tagging strategy to ease release procress, also setup the process to do the customer infrastructire roll out using microservice.
+      Part of backend team responsible for micro-services and IaC, used to manage and orchestrate the customer infrastructure. Introduced the monorepo tagging strategy to ease release procress, also setup the process to do the customer infrastructire roll out using microservice.
         - GraphQL
         - Google Cloud Platform (GCP)
-        - Go (Programming Language)
+        - Golang
         - Terraform
         - Docker
-        - Github
+        - Github APIs
+        - Grafana
+          - Alert
+        - Github Actions.
   - role: Technical Architect
     time: Jun 2018 - May 2022
     company: Mindtree
@@ -177,13 +180,16 @@ technical_skills:
       - name: AWS
         level: 50%
 
+      - name: Terraform
+        level: 70%
+
       - name: REST
         level: 95%
 
       - name: Git
         level: 60%
 
-      - name: Virtualization using docker, vagrant
+      - name: Docker
         level: 60%
 
 soft_skills:
