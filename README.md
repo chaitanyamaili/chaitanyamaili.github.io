@@ -1,46 +1,111 @@
-# Getting Started with Create React App
+# 🌐 Developer Portfolio – Staff Engineer (Cloud Native, GCP)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a modern, responsive developer portfolio built with **React**, **Tailwind CSS**, and **Framer Motion**. It supports **dark/light mode**, **PDF export**, and modular components for easy customization. It is tailored to present the profile of a **Staff Engineer** with 14+ years of experience in Cloud Native technologies and Google Cloud Platform.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- Responsive design for desktop and mobile
+- Dark and light mode support (toggleable)
+- Animated sections with Framer Motion
+- Modular components (`Hero`, `Projects`, `Skills`, etc.)
+- PDF export functionality for downloading your CV
+- Easy customization via a single `cvData` object
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ⚛️ React (with TypeScript)
+- 💨 Tailwind CSS
+- 🎞️ Framer Motion
+- 🌗 Theme toggle using Tailwind's dark mode
+- 📄 jsPDF and html2canvas for exporting to PDF
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 or later recommended)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone the repository
+git clone https://github.com/chaitanyamaili/chaitanyamaili.github.io.git portfolio
+cd portfolio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
+# or
+yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run the Development Server
 
-### `npm run eject`
+npm run dev
+# or
+yarn dev
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The site should be running at http://localhost:5173 (Vite default).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Creating UI component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npx shadcn@latest add button card input textarea`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🧑‍💻 Customization
 
-## Learn More
+All portfolio data is stored in the App.tsx file inside the cvData object:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+const cvData = {
+  name: "Aarav Deshmukh",
+  title: "Staff Engineer | Cloud Native Architect | GCP Certified",
+  ...
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can update:
+	•	Contact info
+	•	Skills
+	•	Work Experience
+	•	Education
+	•	Projects
+	•	Profile Picture
+
+🌓 Theme Toggle
+
+Dark/light mode toggle is located in the top-right section of the Hero component. Tailwind’s dark: variants are used to style components.
+
+🔧 Folder Structure
+
+src/
+├── components/       # All UI components
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   └── ...
+├── App.tsx           # Main component with CV data
+├── ThemeToggle.tsx   # Dark/light toggle logic
+└── main.tsx
+public/
+├── index.html
+└── favicon.ico
+
+📦 Build for Production
+
+npm run build
+# or
+yarn build
+
+Then deploy using platforms like GitHub Pages, Vercel, or Netlify.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+⸻
+
+🧠 Inspired by
+	•	Dev.to Portfolio Guides
+	•	Tailwind UI + shadcn/ui
+	•	Resume formats of top tech engineers
+
+⸻
+
+💡 Feel free to fork and make it your own. Contributions are welcome!

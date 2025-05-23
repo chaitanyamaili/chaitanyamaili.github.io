@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Tailwind will scan these files for class names
     "./public/index.html",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       // Example of customization
