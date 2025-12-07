@@ -61,12 +61,12 @@ const cvData = {
 }
 
 You can update:
-	•	Contact info
-	•	Skills
-	•	Work Experience
-	•	Education
-	•	Projects
-	•	Profile Picture
+- Contact info
+- Skills
+- Work Experience
+- Education
+- Projects
+- Profile Picture
 
 🌓 Theme Toggle
 
@@ -99,13 +99,9 @@ Then deploy using platforms like GitHub Pages, Vercel, or Netlify.
 
 This project is licensed under the MIT License.
 
-⸻
-
 🧠 Inspired by
-	•	Dev.to Portfolio Guides
-	•	Tailwind UI + shadcn/ui
-	•	Resume formats of top tech engineers
-
-⸻
+- Dev.to Portfolio Guides
+- Tailwind UI + shadcn/ui
+- Resume formats of top tech engineers
 
 💡 Feel free to fork and make it your own. Contributions are welcome!

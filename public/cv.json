@@ -1,0 +1,147 @@
+{
+  "name": "Chaitanya Maili",
+  "title": "Staff Engineer | Cloud Native Solutions",
+  "email": "chaitanya.maili@gmail.com",
+  "location": "Bangalore, India",
+  "phone": "+91 9902873567",
+  "github": "https://github.com/chaitanyamaili",
+  "linkedin": "https://www.linkedin.com/in/chaitanyamaili/",
+  "twitter": "",
+  "profilePicture": "profile.png",
+  "aboutMe": "13+ years of IT experience with a strong focus on **cloud-native solutions, design, development, and coding** complex scalable Web Applications and **REST APIs**. Expertise spans Digital Marketing, Insurance, Furniture, Mobile Marketing, Microsites platforms, and Corporate sites. **AWS Certified Cloud Practitioner**.",
+  "workExperience": [
+    {
+      "title": "Staff Engineer",
+      "company": "Pantheon.io",
+      "dates": "Jun 2022 - Present",
+      "description": [
+        "Contributed to the backend team by designing and implementing **microservices** and **Infrastructure as Code (IaC)** to efficiently manage and orchestrate customer infrastructure.",
+        "Introduced a **monorepo tagging strategy** to streamline the release process and set up a rollout workflow for customer infrastructure using microservices.",
+        "**Led a team of engineers** to deliver a high-impact initiative within the deadline, ensuring strategic goals were met.",
+        "Implemented **RESTful APIs** and integrated with various backend services."
+      ]
+    },
+    {
+      "title": "Technical Architect",
+      "company": "Mindtree",
+      "dates": "Jun 2018 - May 2022",
+      "description": [
+        "**Led a 10+ member development team focused on Drupal 8/9 projects.**",
+        "Leveraged modern development technologies including **Drupal VM/Docksal, Acquia BLT, and Solr search.**",
+        "**Implemented visual regression testing** using Node modules within the Continuous Integration (**CI**) pipeline.",
+        "**Integrated PHPMD (PHP Mess Detector) into the CI process** to enforce code quality standards.",
+        "**Managed the end-to-end migration** of a legacy site to the Drupal platform.",
+        "**Developed and maintained Google Data Studio reports** for project metrics and analytics."
+      ]
+    },
+    {
+      "title": "Tech Lead",
+      "company": "Adways Innovations India",
+      "dates": "Aug 2016 - Apr 2018",
+      "description": [
+        "**Developed and maintained scalable REST APIs.**",
+        "**Built and managed a Dashboard tool** used by the Operations team.",
+        "**Implemented and maintained system-critical cron jobs.**",
+        "**Contributed to the integration of third-party APIs** into the core system architecture."
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "HomeLane",
+      "dates": "Feb 2015 - Aug 2016",
+      "description": [
+        "**Led enhancements and maintenance for the core Pricing Engine application.**",
+        "**Handled DevOps tasks** supporting the Pricing Engine infrastructure.",
+        "**Developed new features** using the **CakePHP Framework.**",
+        "**Built and deployed REST APIs** to power the pricing engine services."
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "ZipDial Mobile Solution",
+      "dates": "Apr 2014 - Jan 2015",
+      "description": [
+        "**Developed and provided support for the internal product, Managed Admin.**",
+        "**Utilized the CakePHP Framework** for application development.",
+        "**Built an admin interface** specifically designed to manage campaigns for the Operations team."
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "StrApp Business Solution Pvt Ltd",
+      "dates": "Mar 2011 - Apr 2014"
+    },
+    {
+      "title": "PHP Developer",
+      "company": "Snyxius",
+      "dates": "Jul 2009 - Jun 2010"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Modernized File Storage System",
+      "description":
+        "**Led the modernization** of the file storage system by transitioning from legacy storage solutions to a **cloud-native architecture.**",
+      "tech": "Go, Terraform, Docker, Cloud Storage"
+    },
+    {
+      "title": "Decoupled Microservices and Infrastructure",
+      "description":
+        "As part of the backend team, **decoupled backend microservices and infrastructure** used to manage and orchestrate customer environments. **Introduced a monorepo tagging strategy** to simplify the release process and **set up the mechanism** for customer infrastructure rollouts via a dedicated microservice.",
+      "tech": "Go, Terraform, Datastore, Docker, Cloud Run, Github App"
+    },
+    {
+      "title": "AAMC.org",
+      "description":
+        "**Developed and launched the AAMC.org corporate website** using **Drupal 8/9** and the **Acquia infrastructure**. This project involved **building numerous content types, migrating legacy content** from systems like CoreMedia and Django, and **implementing an efficient search capability** with Solr. **Integrated Google Analytics (GA)** to track document usage via a Data Studio report and capture detailed page view counts.",
+      "tech": "Drupal 8, MySQL, Docker, Acquia BLT, Google DataStudio"
+    },
+    {
+      "title": "AAMC Internal Microsite Platform",
+      "description": "**Developed an internal multi-site platform** using **Drupal 9**. This platform utilizes the **Domain Access module** and various custom features to host multiple small sites, offering site-specific assets (e.g., logo, GA code) and preset color themes. The platform also **includes custom content types and views** to meet diverse site requirements.",
+      "tech": "Drupal 9, MySQL, Docker, Acquia BLT"
+    },
+    {
+      "title": "Adways | Internal Portal",
+      "description":
+        "**Developed and maintained an internal portal** for publishing and managing campaigns. This solution included **backend REST APIs** designed to serve and track campaign data for the Android mobile application.",
+      "tech": "Codeigniter, AWS EC2, AWS RDS"
+    },
+    {
+      "title": "Homelane - Pricing Engine",
+      "description":
+        "**Developed and maintained a Catalog Management System** that served as the central data hub. This product featured a **REST API** to provide inputs to Sketchup modules and other systems for generating quotes. The system **incorporated pricing logic, managed quote versioning, and generated several customer-facing reports**. All resulting artifacts were uploaded to **S3 buckets** for seamless consumption by integrated systems.",
+      "tech": "CakePHP, AWS EC2, AWS RDS"
+    },
+    {
+      "title": "Zipdial - Managed Admin",
+      "description":
+        "This product **helps the ZipDial internal team efficiently deliver and configure campaigns.** It also **allows them to manage reports and KPIs**, as well as **handle customers, users, orders, and offline payments.**",
+      "tech": "CakePHP, MySQL, HTML, CSS, JavaScript"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "Dr. Babasaheb Ambedkar Marathwada University of Aurangabad",
+      "dates": ""
+    }
+  ],
+  "skills": [
+    "Go",
+    "Terraform",
+    "Github Actions",
+    "PostgreSQL",
+    "MongoDB",
+    "HTML",
+    "CSS",
+    "Git",
+    "Docker",
+    "AWS",
+    "GCP",
+    "GraphQL",
+    "Drupal 8/9",
+    "JavaScript",
+    "PHP"
+  ]
+}

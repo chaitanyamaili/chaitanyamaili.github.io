@@ -26,25 +26,25 @@ const Projects = ({ projects }: { projects: Project[] }) => (
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: index * 0.1 }}
-          className="bg-gray-800/50 rounded-lg border border-gray-700 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]"
+          className="transition-transform hover:scale-[1.02]"
         >
-          <Card>
+          <Card className="hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
-              <CardTitle className="text-lg font-semibold text-white">
+              <CardTitle className="text-lg font-semibold text-foreground">
                 {project.title}
               </CardTitle>
-              <CardDescription className="text-gray-400">
+              <CardDescription className="text-muted-foreground">
                 {project.tech}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <p className="text-muted-foreground mb-4">{project.description}</p>
               {project.link && (
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  className="text-primary hover:underline font-medium"
                 >
                   View Project
                 </a>

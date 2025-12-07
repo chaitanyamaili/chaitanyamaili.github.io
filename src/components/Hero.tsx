@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react"
 import IconLink from "./IconLink"
-import SectionTitle from "./SectionTitle"
 import ThemeToggle from "./ThemeToggle"
 
 type HeroProps = {
@@ -29,8 +28,6 @@ const Hero = ({
 }: HeroProps) => {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8">
-      <SectionTitle title="Welcome" subtitle="Here's who I am & what I do" />
-
       <header className="flex flex-col md:flex-row items-center gap-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -64,7 +61,7 @@ const Hero = ({
             </span>
           </div>
 
-          <div className="flex gap-4 justify-center md:justify-start mt-4">
+          <div className="flex gap-4 justify-center md:justify-start mt-4 social-icons">
             <IconLink href={github} icon={Github} label="GitHub" />
             <IconLink href={linkedin} icon={Linkedin} label="LinkedIn" />
             {twitter && <IconLink href={twitter} icon={Twitter} label="Twitter" />}
