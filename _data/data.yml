@@ -48,18 +48,18 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      13+ years of IT experience in Technology with a range of experience in design, development and coding complex scalable Web Applications, REST Apis in areas like Digital Marketing, Insurance, Furniture, Mobile Marketing, Microsites platform and Corporate sites.
-      AWS Certified Cloud Practitioner.
+      15+ years of IT experience with expertise in the design, development, and coding of complex, scalable Web Applications and REST APIs. Experience spans multiple domains, including Digital Marketing, Insurance, Furniture, Mobile Marketing, Microsites platforms, and Corporate sites. 
+      AWS Certified Cloud Practitioner with practical working experience in GCP products.
 education:
     - degree: BE in Computer Science
       university: Dr. Babasaheb Ambedkar Marathwada University of Aurangabad
       
 experiences:
-  - role: Senior Software Enginner
+  - role: Staff Engineer
     time: Jun 2022 - Present
     company: Pantheon India Platform
     details: |
-      Part of backend team responsible for micro-services and IaC, used to manage and orchestrate the customer infrastructure. Introduced the monorepo tagging strategy to ease release procress, also setup the process to do the customer infrastructire roll out using microservice.
+      As part of the core Platform team, I was responsible for developing and modernizing services, including microservices and IaC, used to manage and orchestrate customer infrastructure. I implemented a monorepo tagging strategy to ease the release process and set up the automated workflow for customer infrastructure rollouts via a microservice.
         - GraphQL
         - Google Cloud Platform (GCP)
         - Golang
@@ -117,6 +117,9 @@ projects:
     #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
+      - title: "Modernized File Storage System"
+        # link: "#hook"
+        tagline: "Leading the modernization of the file storage system by transitioning from legacy storage solutions to a cloud-native architecture."
       - title: "Decoupled backend microservices and infrastructure"
         # link: "#hook"
         tagline: "Part of backend team responsible for micro-services and the infrastructure, used to manage and orchestrate the customer infrastructure. Introduced the monorepo tagging strategy to ease release procress, also setup the process to do the customer infrastructire roll out using microservice."
