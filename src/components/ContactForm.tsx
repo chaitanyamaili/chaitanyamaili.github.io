@@ -1,10 +1,18 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, AlertTriangle, Loader2 } from 'lucide-react';
+import emailjs from '@emailjs/browser'; // 1. Import EmailJS SDK
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 import SectionTitle from './SectionTitle';
+
+// 2. Define your EmailJS Credentials (Highly Recommend using environment variables!)
+// For local testing, you can place these here temporarily, but for production, 
+// move them to a .env file (e.g., REACT_APP_EMAILJS_SERVICE_ID=...)
+const EMAILJS_SERVICE_ID = 'service_8ktoln8';
+const EMAILJS_TEMPLATE_ID = 'template_07z26ds';
+const EMAILJS_PUBLIC_KEY = 'EMoVSta3YmfIU2hQ1'; 
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -18,19 +26,36 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmissionStatus('idle');
+    setSubmissionStatus('idle'); // Reset status on new submission
+
+    // 3. Prepare the template parameters (must match the template variables in EmailJS)
+    const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        // Add other fields your template uses, e.g., to_email: 'chaitanyamaili@example.com'
+    };
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      const success = Math.random() > 0.3;
+      // 4. Send the email using the EmailJS function
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
 
-      if (success) {
+      if (response.status === 200) {
         setSubmissionStatus('success');
         setFormData({ name: '', email: '', message: '' });
       } else {
+        // Handle non-200 responses from EmailJS (e.g., invalid template)
+        console.error('EmailJS Error Response:', response);
         setSubmissionStatus('error');
       }
     } catch (error) {
+      // 5. Handle network errors or other exceptions
+      console.error('Error sending email:', error);
       setSubmissionStatus('error');
     } finally {
       setIsSubmitting(false);
