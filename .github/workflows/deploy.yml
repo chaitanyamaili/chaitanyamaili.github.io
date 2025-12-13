@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - new-profile
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js (LTS)
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+    
+      - name: Deploy to GitHub Pages
+        env:
+          GIT_USER: github-actions[bot]
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "$GIT_USER"
+          git config user.email "${GIT_USER}@users.noreply.github.com"
+
+          npx gh-pages -d build -r https://$GIT_USER:$GH_TOKEN@github.com/${{ github.repository }}.git
