@@ -7,6 +7,7 @@ import Projects from "./components/Projects"
 import WorkExperience from "./components/WorkExperience"
 import Education from "./components/Education"
 import ContactForm from "./components/ContactForm"
+import Certificate from "./components/Certificates"
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -41,6 +42,11 @@ type CVData = {
     title: string
     description: string
     tech: string
+    link?: string
+  }[]
+  certificates: {
+    title: string
+    authority?: string
     link?: string
   }[]
   skills: string[]
@@ -92,6 +98,10 @@ function App() {
 
       <motion.div {...fadeIn}>
         <Education education={cvData.education} />
+      </motion.div>
+
+      <motion.div {...fadeIn}>
+        <Certificate certificates={cvData.certificates} />
       </motion.div>
 
       <motion.div {...fadeIn}>

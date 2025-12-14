@@ -160,6 +160,10 @@
     display: none !important;
   }
 
+  a {
+    display: none !important;
+  }
+
   /* Break rules */
   section + section {
     margin-top: 10px !important;

@@ -7,7 +7,7 @@ type Experience = {
   company: string;
   dates: string;
   description: string[];
-};
+      };
 
 const WorkExperience = ({ experiences }: { experiences: Experience[] }) => (
   <section>
