@@ -1,6 +1,6 @@
 {
   "name": "Chaitanya Maili",
-  "title": "Staff Engineer | Cloud Native Solutions",
+  "title": "Staff Engineer · Cloud Native | Golang · Kubernetes · GCP · AWS",
   "email": "chaitanya.maili@gmail.com",
   "location": "Bangalore, India",
   "phone": "+91 9902873567",
@@ -8,17 +8,17 @@
   "linkedin": "https://www.linkedin.com/in/chaitanyamaili/",
   "twitter": "",
   "profilePicture": "profile.png",
-  "aboutMe": "15+ years of IT experience with a strong focus on Cloud native solutions, design, development, and coding complex scalable Web Applications and REST APIs. Expertise spans Digital Marketing, Insurance, Furniture, Mobile Marketing, Microsites platforms, and Corporate sites. AWS Certified Cloud Practitioner.",
+  "aboutMe": "I build systems that other engineers don't have to think about — and teams that don't need me in every room for things to go well. Over 15 years in the industry, I've worked across the full stack of distributed systems: backend services, cloud-native infrastructure on AWS and GCP, and platform engineering on Kubernetes. At Pantheon, I'm currently leading the migration of a legacy filesystem to a cloud-native architecture — owning the technical direction end to end, from exploration and design through execution, while mentoring a team of engineers through the complexity. Open to Staff/Principal Engineer and Engineering Manager roles in developer tools, cloud platforms, or infrastructure products.",
   "workExperience": [
     {
       "title": "Staff Engineer",
       "company": "Pantheon.io",
       "dates": "Jun 2022 - Present",
       "description": [
-        "Contributed to the backend team by designing and implementing microservices and IaC, resulting in significantly improved infrastructure efficiency and scalability.",
-        "Established a cohesive release pipeline by introducing a monorepo tagging strategy, which streamlined the CI/CD process for new customer infrastructure rollouts.",
-        "Led a 3-member team of engineers to deliver a high-impact initiative within the deadline, ensuring strategic goals were met.",
-        "Implemented RESTful APIs and integrated with various backend services."
+        "Serving as technical lead for Pantheon's filesystem modernization — migrating legacy storage to a cloud-native architecture across the full lifecycle: discovery, architecture design, team coordination, and hands-on implementation. The migration has driven meaningful reliability improvements and reduced operational overhead accumulated in the legacy storage layer.",
+        "Mentoring 2–4 engineers through design reviews, code reviews, and complex technical decisions — focused on building independent problem-solvers, not just shipping the current sprint.",
+        "Designed and implemented backend microservices and IaC, improving infrastructure efficiency and scalability. Introduced a monorepo tagging strategy that streamlined CI/CD for customer infrastructure rollouts.",
+        "Partnering with engineering leadership on roadmap planning, incident response, and cross-team technical alignment."
       ]
     },
     {
@@ -79,9 +79,8 @@
   "projects": [
     {
       "title": "Modernized File Storage System",
-      "description":
-        "Leading the modernization of the file storage system by transitioning from legacy storage solutions to a cloud-native architecture.",
-      "tech": "Go, Terraform, Docker, Cloud Storage"
+      "description": "Technical lead for Pantheon's filesystem modernization — migrating legacy storage to a cloud-native architecture. Owned the full lifecycle: technical exploration, architecture design, team coordination, and hands-on implementation. Delivered meaningful reliability improvements and reduced the operational overhead of the legacy storage layer.",
+      "tech": "Go, Terraform, Docker, GCP Cloud Storage, Kubernetes"
     },
     {
       "title": "Decoupled Microservices and Infrastructure",
@@ -140,19 +139,20 @@
   ],
   "skills": [
     "Go",
+    "Kubernetes",
     "Terraform",
-    "GitHub Actions",
-    "PostgreSQL",
-    "MySQL",
-    "HTML",
-    "CSS",
-    "Git",
-    "Docker",
     "AWS",
     "GCP",
+    "Docker",
+    "GitHub Actions",
+    "PostgreSQL",
     "GraphQL",
-    "Drupal 8/9",
+    "Redis",
+    "MySQL",
     "JavaScript",
+    "Git",
+    "HTML",
+    "CSS",
     "PHP"
   ]
 }
