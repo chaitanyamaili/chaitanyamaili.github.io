@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { UserRound } from "lucide-react";
 import SectionTitle from "./SectionTitle";
 
@@ -10,13 +11,20 @@ const About = ({ aboutMe }: AboutProps) => {
   return (
     <section id="about" className="mb-8">
       <SectionTitle title="About Me" icon={UserRound} />
-      <div className="space-y-3">
-        {paragraphs.map((para, i) => (
-          <p key={i} className="text-muted-foreground text-sm leading-relaxed print:text-black print:text-[11pt] print:leading-[1.4]">
-            {para}
-          </p>
-        ))}
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="bg-card p-6 rounded-lg border border-border shadow-md"
+      >
+        <ul className="list-disc list-inside text-muted-foreground space-y-2 print:text-black print:text-[11pt] print:leading-[1.4]">
+          {paragraphs.map((para, i) => (
+            <li key={i} className="leading-relaxed">
+              {para}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react"
+import { Mail, MapPin, Phone, Github, Linkedin, Twitter, BookOpen } from "lucide-react"
 import IconLink from "./IconLink"
 import ThemeToggle from "./ThemeToggle"
 
@@ -65,6 +65,7 @@ const Hero = ({
             <IconLink href={github} icon={Github} label="GitHub" />
             <IconLink href={linkedin} icon={Linkedin} label="LinkedIn" />
             {twitter && <IconLink href={twitter} icon={Twitter} label="Twitter" />}
+            <IconLink href="https://chaitanyamaili.in/blogs/" icon={BookOpen} label="Blog" />
             <ThemeToggle />
           </div>
         </div>
