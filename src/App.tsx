@@ -22,6 +22,7 @@ type CVData = {
   location: string
   phone: string
   github: string
+  githubWork?: string
   linkedin: string
   twitter?: string
   profilePicture: string
@@ -74,6 +75,7 @@ function App() {
           location={cvData.location}
           phone={cvData.phone}
           github={cvData.github}
+          githubWork={cvData.githubWork}
           linkedin={cvData.linkedin}
           twitter={cvData.twitter}
           profilePicture={cvData.profilePicture}

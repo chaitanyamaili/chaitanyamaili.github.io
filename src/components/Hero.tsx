@@ -10,6 +10,7 @@ type HeroProps = {
   location: string
   phone: string
   github: string
+  githubWork?: string
   linkedin: string
   twitter?: string
   profilePicture: string
@@ -22,6 +23,7 @@ const Hero = ({
   location,
   phone,
   github,
+  githubWork,
   linkedin,
   twitter,
   profilePicture,
@@ -63,6 +65,18 @@ const Hero = ({
 
           <div className="flex gap-4 justify-center md:justify-start mt-4 social-icons">
             <IconLink href={github} icon={Github} label="GitHub" />
+            {githubWork && (
+              <a
+                href={githubWork}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub (Work)"
+                className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-1"
+              >
+                <Github className="w-5 h-5" />
+                <span className="text-xs font-medium">Work</span>
+              </a>
+            )}
             <IconLink href={linkedin} icon={Linkedin} label="LinkedIn" />
             {twitter && <IconLink href={twitter} icon={Twitter} label="Twitter" />}
             <IconLink href="https://chaitanyamaili.in/blogs/" icon={BookOpen} label="Blog" />
