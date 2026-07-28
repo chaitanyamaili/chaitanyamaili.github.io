@@ -1,24 +1,25 @@
 {
   "name": "Chaitanya Maili",
-  "title": "Staff Engineer · Cloud Native | Golang · Kubernetes · GCP · AWS",
+  "title": "Staff Engineer → Engineering Manager | Cloud Native · Platform Engineering · Team Leadership",
   "email": "chaitanya.maili@gmail.com",
   "location": "Bangalore, India",
   "phone": "+91 9902873567",
   "github": "https://github.com/chaitanyamaili",
+  "githubWork": "https://github.com/chaitanyapantheor",
   "linkedin": "https://www.linkedin.com/in/chaitanyamaili/",
   "twitter": "",
   "profilePicture": "profile.png",
-  "aboutMe": "I build systems that other engineers don't have to think about — and teams that don't need me in every room for things to go well.\n\nOver 15 years in the industry, I've worked across the full stack of distributed systems: backend services, cloud-native infrastructure on AWS and GCP, and platform engineering on Kubernetes. At Pantheon, I'm currently leading the migration of a legacy filesystem to a cloud-native architecture — owning the technical direction end to end, from exploration and design through execution, while mentoring a team of engineers through the complexity.\n\nThat balance is what I care most about: staying technically sharp enough to make the right architecture call at the right moment, while being invested enough in the people around me that they're growing, not just shipping.\n\nOpen to Staff/Principal Engineer and Engineering Manager roles in developer tools, cloud platforms, or infrastructure products.",
+  "aboutMe": "I've spent 15 years building distributed systems — and the last few years realising the most valuable thing I can do isn't write the code, it's make sure the right people are writing it well, growing through it, and owning the outcome.\n\nAt Pantheon I'm the technical lead for a multi-year cloud-native filesystem migration: I set the architecture, coordinate across teams, mentor the engineers doing the work, and represent the project to engineering leadership. That's not a description of an IC role — it's the job of an engineering manager, without the title.\n\nAt Mindtree I led a 10+ member team across multiple enterprise Drupal projects. I ran sprints, drove quality improvements that cut production bugs by 40%, managed client relationships, and owned delivery end to end.\n\nThe pattern across my career: I gravitate toward the ownership and people parts of technical leadership. I want to make that my full-time job.\n\nI'm targeting Engineering Manager roles in cloud-native, developer tools, or platform infrastructure — environments where deep technical context matters for the people decisions, not just the architecture ones.",
   "workExperience": [
     {
       "title": "Staff Engineer",
       "company": "Pantheon.io",
       "dates": "Jun 2022 - Present",
       "description": [
-        "Serving as technical lead for Pantheon's filesystem modernization — migrating legacy storage to a cloud-native architecture across the full lifecycle: discovery, architecture design, team coordination, and hands-on implementation. The migration has driven meaningful reliability improvements and reduced operational overhead accumulated in the legacy storage layer.",
-        "Mentoring 2–4 engineers through design reviews, code reviews, and complex technical decisions — focused on building independent problem-solvers, not just shipping the current sprint.",
-        "Designed and implemented backend microservices and IaC, improving infrastructure efficiency and scalability. Introduced a monorepo tagging strategy that streamlined CI/CD for customer infrastructure rollouts.",
-        "Partnering with engineering leadership on roadmap planning, incident response, and cross-team technical alignment."
+        "Technical lead for Pantheon's cloud-native filesystem modernization — a multi-year initiative migrating legacy storage to GCP Cloud Storage on Kubernetes. Defined the architecture, sequenced delivery across quarters, and coordinated dependencies with platform and product teams. The project is on track to eliminate a long-standing reliability bottleneck and reduce operational overhead.",
+        "Mentoring 2–4 engineers through the full complexity of the project: breaking down ambiguous problems, navigating trade-offs in design reviews, building confidence presenting technical decisions to non-technical stakeholders. Two engineers have taken on independently scoped lead work they weren't doing when we started.",
+        "Partnering with engineering leadership on roadmap sequencing, cross-team technical alignment, and capacity planning. Regularly representing the team's technical direction in leadership reviews.",
+        "Designed and delivered backend microservices and IaC in Go and Terraform, with particular focus on observability, reliability, and reducing the operational surface area for on-call engineers."
       ]
     },
     {
@@ -26,12 +27,10 @@
       "company": "Mindtree",
       "dates": "Jun 2018 - May 2022",
       "description": [
-        "Led a 10+ member development team focused on Drupal 8/9 projects.",
-        "Leveraged modern development technologies including Drupal VM/Docksal, Acquia BLT, and Solr search.",
-        "Implemented visual regression testing in the CI pipeline, which reduced production UI bugs by 40% post-deployment.",
-        "Integrated PHPMD (PHP Mess Detector) into the CI process to enforce code quality standards.",
-        "Managed the end-to-end migration of a legacy site to the Drupal platform.",
-        "Developed and maintained Google Data Studio reports for project metrics and analytics."
+        "Led a 10+ member development team across concurrent enterprise Drupal 8/9 engagements — accountable for technical direction, sprint planning, code quality, and delivery against client commitments.",
+        "Drove process improvements with measurable results: introduced visual regression testing in CI (40% reduction in production UI bugs post-deployment) and static analysis via PHPMD, establishing code quality standards that the team maintained independently.",
+        "Owned the end-to-end migration of a major enterprise site to Drupal — from scoping and estimation through launch, coordinating with client stakeholders throughout. Responsible for sequencing the work to minimise disruption to the live site.",
+        "Built project health reporting via Google Data Studio, giving both technical leads and business stakeholders visibility into delivery metrics and quality trends."
       ]
     },
     {
@@ -39,10 +38,9 @@
       "company": "Adways Innovations India",
       "dates": "Aug 2016 - Apr 2018",
       "description": [
-        "Developed and maintained scalable REST APIs.",
-        "Built and managed a Dashboard tool used by the Operations team.",
-        "Implemented and maintained system-critical cron jobs.",
-        "Contributed to the integration of third-party APIs into the core system architecture."
+        "Led backend API and tooling development for the campaign management platform, coordinating with a small team on delivery priorities and technical direction.",
+        "Owned the Operations team's internal dashboard — working directly with non-engineering stakeholders to understand their workflow, translate requirements into deliverables, and iterate based on feedback.",
+        "Responsible for system reliability: designed and maintained critical cron jobs and third-party API integrations with a focus on fault tolerance."
       ]
     },
     {
@@ -50,10 +48,8 @@
       "company": "HomeLane",
       "dates": "Feb 2015 - Aug 2016",
       "description": [
-        "Led enhancements and maintenance for the core Pricing Engine application.",
-        "Handled DevOps tasks supporting the Pricing Engine infrastructure.",
-        "Developed new features using the CakePHP Framework.",
-        "Built and deployed REST APIs to power the pricing engine services."
+        "Technical lead for the core Pricing Engine — an internally critical system driving customer-facing quotes and downstream reporting. Owned feature development, infrastructure, and reliability for a system the business depended on daily.",
+        "Built REST APIs in CakePHP powering pricing logic, quote versioning, and S3-based artifact delivery. Took on DevOps responsibility for the pricing infrastructure alongside feature work."
       ]
     },
     {
@@ -61,8 +57,7 @@
       "company": "ZipDial Mobile Solution",
       "dates": "Apr 2014 - Jan 2015",
       "description": [
-        "Built an admin interface using CakePHP frameworks for efficient campaign management.",
-        "Developed and provided support for the internal product, Managed Admin."
+        "Built and supported Managed Admin — the primary tool used by ZipDial's operations team to configure campaigns, manage customers, and track KPIs. Worked closely with the operations team to translate their workflow into product decisions."
       ]
     },
     {
@@ -78,44 +73,24 @@
   ],
   "projects": [
     {
-      "title": "Modernized File Storage System",
-      "description": "Technical lead for Pantheon's filesystem modernization — migrating legacy storage to a cloud-native architecture. Owned the full lifecycle: technical exploration, architecture design, team coordination, and hands-on implementation. Delivered meaningful reliability improvements and reduced the operational overhead of the legacy storage layer.",
+      "title": "Cloud-Native Filesystem Modernization — Pantheon",
+      "description": "Technical lead and delivery owner for Pantheon's flagship infrastructure initiative: migrating a legacy filesystem to GCP Cloud Storage on Kubernetes. Responsible for architecture, cross-team coordination, quarterly roadmap sequencing, and hands-on implementation. Mentored 3 engineers through the complexity of the project; two have since taken on lead-level work independently. Delivered meaningful reliability improvements and a significant reduction in operational overhead.",
       "tech": "Go, Terraform, Docker, GCP Cloud Storage, Kubernetes"
     },
     {
-      "title": "Decoupled Microservices and Infrastructure",
-      "description":
-        "Part of decoupled backend microservices and infrastructure used to manage and orchestrate customer environments. Introduced a monorepo tagging strategy to simplify the release process and set up the mechanism for customer infrastructure rollouts via a dedicated microservice.",
-      "tech": "Go, Terraform, Datastore, Docker, Cloud Run, Github App"
+      "title": "Decoupled Microservices Platform — Pantheon",
+      "description": "Designed and built backend microservices managing and orchestrating customer environments at scale. Introduced a monorepo tagging strategy that simplified CI/CD and enabled a new mechanism for customer infrastructure rollouts — reducing the manual steps in a critical release process. Balanced long-term maintainability with delivery velocity.",
+      "tech": "Go, Terraform, Datastore, Docker, Cloud Run, GitHub App"
     },
     {
-      "title": "AAMC.org",
-      "description":
-        "Developed and launched the AAMC.org corporate website using Drupal 8/9 and the Acquia infrastructure. This project involved various content types, migrating legacy content from systems like CoreMedia and Django, and implemented an efficient search capability with Solr. Integrated Google Analytics (GA) to track document usage via a Data Studio report.",
-      "tech": "Drupal 8, MySQL, Docker, Acquia BLT, Google DataStudio"
+      "title": "AAMC.org — Enterprise CMS Platform",
+      "description": "Led the development and launch of AAMC.org on Drupal 8/9 and Acquia infrastructure. Coordinated content migration from legacy systems (CoreMedia, Django), built Solr-backed search, and integrated Google Analytics reporting. Managed delivery against client milestones with a distributed team — accountable for both technical quality and stakeholder communication throughout.",
+      "tech": "Drupal 8/9, MySQL, Docker, Acquia BLT, Google DataStudio"
     },
     {
       "title": "AAMC Internal Microsite Platform",
-      "description": "Developed an internal multi-site platform using Drupal 9. This platform utilizes the Domain Access module and various custom features to host multiple small sites, offering site-specific assets (e.g., logo, GA code) and preset color themes. The platform also includes custom content types and views to meet diverse site requirements.",
+      "description": "Designed a multi-site platform enabling business teams to launch branded internal microsites without engineering involvement each time. Custom content types, per-site theming, and site-specific assets via Drupal Domain Access. Reduced new-site launch time from weeks to days — a direct improvement to team productivity.",
       "tech": "Drupal 9, MySQL, Docker, Acquia BLT"
-    },
-    {
-      "title": "Adways | Internal Portal",
-      "description":
-        "Developed and maintained an internal portal for publishing and managing campaigns. This solution included backend REST APIs designed to serve and track campaign data for the Android mobile application.",
-      "tech": "Codeigniter, AWS EC2, AWS RDS"
-    },
-    {
-      "title": "Homelane - Pricing Engine",
-      "description":
-        "Developed and maintained a Catalog Management System that served as the central data hub. This product featured a REST API to provide inputs to Sketchup modules and other systems for generating quotes. The system incorporated pricing logic, managed quote versioning, and generated several customer-facing reports. All resulting artifacts were uploaded to S3 buckets for seamless consumption by integrated systems.",
-      "tech": "CakePHP, AWS EC2, AWS RDS"
-    },
-    {
-      "title": "Zipdial - Managed Admin",
-      "description":
-        "This product helps the ZipDial internal team efficiently deliver and configure campaigns. It also allows them to manage reports and KPIs, as well as handle customers, users, orders, and offline payments.",
-      "tech": "CakePHP, MySQL, HTML, CSS, JavaScript"
     }
   ],
   "education": [
@@ -138,6 +113,11 @@
     }
   ],
   "skills": [
+    "Team Leadership & Mentoring",
+    "Technical Roadmapping",
+    "Cross-functional Collaboration",
+    "Agile / Scrum Delivery",
+    "Engineering Quality & Process",
     "Go",
     "Kubernetes",
     "Terraform",
@@ -146,13 +126,8 @@
     "Docker",
     "GitHub Actions",
     "PostgreSQL",
-    "GraphQL",
     "Redis",
     "MySQL",
-    "JavaScript",
-    "Git",
-    "HTML",
-    "CSS",
-    "PHP"
+    "Git"
   ]
 }
