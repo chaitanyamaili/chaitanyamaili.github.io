@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter, BookOpen, Building2 } from "lucide-react"
+import { Mail, MapPin, Phone, Github, Linkedin, Twitter, BookOpen, Building2, FileText } from "lucide-react"
 import IconLink from "./IconLink"
 import ThemeToggle from "./ThemeToggle"
 
@@ -78,22 +78,22 @@ const Hero = ({
 
           <div className="flex gap-3 justify-center md:justify-start mt-4">
             <a
-              href={linkedin}
+              href="/resume.html"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              <Linkedin className="w-4 h-4" />
-              Let's connect
+              <FileText className="w-4 h-4" />
+              Download CV
             </a>
             <a
-              href="https://chaitanyamaili.in/blogs/"
+              href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium hover:bg-accent transition-colors"
             >
-              <BookOpen className="w-4 h-4" />
-              Read my writing
+              <Linkedin className="w-4 h-4" />
+              Let's connect
             </a>
           </div>
         </div>
