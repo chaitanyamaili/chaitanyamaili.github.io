@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chaitanya Maili — Resume</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11pt;
+  line-height: 1.45;
+  color: #111;
+  background: #e8e8e8;
+}
+
+/* ── Print bar (screen only) ── */
+.print-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 100;
+  font-family: -apple-system, sans-serif;
+  font-size: 13px;
+}
+
+.print-bar button {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.print-bar button:hover { background: #4338ca; }
+.print-bar a { color: #94a3b8; text-decoration: none; }
+.print-bar a:hover { color: #e2e8f0; }
+
+/* ── Page wrapper ── */
+.resume-wrapper {
+  margin: 56px auto 48px;
+  max-width: 210mm;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page {
+  background: #fff;
+  width: 210mm;
+  min-height: 297mm;
+  padding: 16mm 18mm 14mm;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+
+/* ── Header ── */
+h1 {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 24pt;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+}
+
+.tagline {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #475569;
+  margin-top: 4px;
+  letter-spacing: 0.1px;
+}
+
+.contact-line {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9pt;
+  color: #64748b;
+  margin-top: 5px;
+}
+.contact-line a { color: #64748b; text-decoration: none; }
+
+/* ── Dividers & section headings ── */
+.divider {
+  border: none;
+  border-top: 1.5px solid #e2e8f0;
+  margin: 11px 0 10px;
+}
+
+h2 {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #4f46e5;
+  margin-bottom: 7px;
+}
+
+/* ── Summary ── */
+.summary p {
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: #1e293b;
+}
+
+/* ── Experience ── */
+.job { margin-bottom: 12px; }
+.job:last-child { margin-bottom: 0; }
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.job-title {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.job-company {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10pt;
+  color: #475569;
+}
+
+.job-dates {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9pt;
+  color: #64748b;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.job ul {
+  margin-top: 4px;
+  margin-left: 15px;
+  list-style: disc;
+}
+.job ul li {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #1e293b;
+  margin-bottom: 2px;
+}
+
+.job p {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #1e293b;
+  margin-top: 3px;
+}
+
+/* ── Projects ── */
+.project { margin-bottom: 7px; }
+.project:last-child { margin-bottom: 0; }
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.project-name {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #0f172a;
+}
+.project-tech {
+  font-size: 8.5pt;
+  color: #64748b;
+  font-style: italic;
+}
+.project p {
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #1e293b;
+  margin-top: 2px;
+}
+
+/* ── Skills ── */
+.skills-block { margin-bottom: 5px; }
+.skills-block:last-child { margin-bottom: 0; }
+
+.skills-label {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #0f172a;
+}
+.skills-values {
+  font-size: 9.5pt;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+/* ── Education & Certs two-column ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+  align-items: start;
+}
+
+.edu-degree, .cert-name {
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+  color: #0f172a;
+}
+.edu-school, .cert-issuer {
+  font-size: 9pt;
+  color: #475569;
+}
+.cert-item { margin-bottom: 4px; }
+.cert-item:last-child { margin-bottom: 0; }
+
+/* ── Dot separator ── */
+.dot { color: #94a3b8; margin: 0 5px; }
+
+/* ── Print ── */
+@media print {
+  @page { size: A4; margin: 14mm 17mm; }
+
+  body { background: #fff; }
+  .print-bar { display: none !important; }
+
+  .resume-wrapper {
+    margin: 0;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .page {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  a { color: inherit !important; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Print bar (hidden on print) -->
+<div class="print-bar">
+  <button onclick="window.print()">⬇ Save as PDF</button>
+  <a href="/">← Back to portfolio</a>
+</div>
+
+<div class="resume-wrapper">
+
+  <!-- ════════════════════ PAGE 1 ════════════════════ -->
+  <div class="page">
+
+    <header>
+      <h1>Chaitanya Maili</h1>
+      <p class="tagline">Engineering Manager &nbsp;·&nbsp; Cloud Native &nbsp;·&nbsp; Platform Engineering &nbsp;·&nbsp; Team Leadership</p>
+      <p class="contact-line">
+        chaitanya.maili@gmail.com
+        <span class="dot">·</span>
+        Bangalore, India
+        <span class="dot">·</span>
+        <a href="https://linkedin.com/in/chaitanyamaili">linkedin.com/in/chaitanyamaili</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/chaitanyamaili">github.com/chaitanyamaili</a>
+        <span class="dot">·</span>
+        <a href="https://chaitanyamaili.in">chaitanyamaili.in</a>
+      </p>
+    </header>
+
+    <hr class="divider"/>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>15 years in distributed systems engineering, now targeting Engineering Manager roles in cloud-native and platform infrastructure. At Pantheon I own the architecture and delivery of a multi-year filesystem migration — coordinating across teams, mentoring engineers into lead-level ownership, and representing work to engineering leadership. The job of an EM, without the title. Previously led a 10-member team at Mindtree across concurrent enterprise engagements, owning sprint execution, code quality, and client relationships end to end.</p>
+    </section>
+
+    <hr class="divider"/>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Staff Engineer</span>
+            <span class="dot">·</span>
+            <span class="job-company">Pantheon.io</span>
+          </div>
+          <span class="job-dates">Jun 2022 – Present</span>
+        </div>
+        <ul>
+          <li>Technical lead for a multi-year cloud-native filesystem migration to GCP Cloud Storage on Kubernetes — defined the architecture, sequenced delivery across quarters, coordinated cross-team dependencies. On track to eliminate a long-standing reliability bottleneck and reduce operational overhead by 30%.</li>
+          <li>Mentoring 3 engineers through the full complexity of the project; 2 have since taken on independently scoped lead work they were not doing when the project started, through deliberate design review, 1:1 coaching, and incremental ownership transfer.</li>
+          <li>Partnering with engineering leadership on roadmap sequencing, capacity planning, and cross-team technical alignment. Regularly representing architecture decisions in leadership reviews.</li>
+          <li>Shipped backend microservices and infrastructure-as-code in Go and Terraform — focused on observability, reliability, and reducing operational surface area for on-call engineers.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Technical Architect</span>
+            <span class="dot">·</span>
+            <span class="job-company">Mindtree</span>
+          </div>
+          <span class="job-dates">Jun 2018 – May 2022</span>
+        </div>
+        <ul>
+          <li>Led a 10-member development team across concurrent enterprise Drupal 8/9 engagements — accountable for technical direction, sprint planning, code quality, and execution against client commitments.</li>
+          <li>Introduced visual regression testing in CI and static analysis via PHPMD, reducing production UI bugs by 40% post-deployment — a team-level quality culture change, not just a tooling addition.</li>
+          <li>Owned full-lifecycle migration of a major enterprise site from CoreMedia to Drupal — scoping through launch, coordinating with client stakeholders to minimise disruption.</li>
+          <li>Built project health dashboards in Google Data Studio giving technical leads and business stakeholders shared visibility into quality trends and milestone progress.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Tech Lead</span>
+            <span class="dot">·</span>
+            <span class="job-company">Adways Innovations India</span>
+          </div>
+          <span class="job-dates">Aug 2016 – Apr 2018</span>
+        </div>
+        <ul>
+          <li>Led backend API and tooling development for a campaign management platform, coordinating a team of 4 engineers on priorities and technical direction.</li>
+          <li>Owned an internal operations dashboard built directly from stakeholder workflow interviews — requirements, implementation, and iteration with non-engineering users.</li>
+        </ul>
+      </div>
+
+    </section>
+  </div><!-- end page 1 -->
+
+  <!-- ════════════════════ PAGE 2 ════════════════════ -->
+  <div class="page">
+
+    <section>
+      <h2>Experience (continued)</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="dot">·</span>
+            <span class="job-company">HomeLane</span>
+          </div>
+          <span class="job-dates">Feb 2015 – Aug 2016</span>
+        </div>
+        <p>Technical lead for the core Pricing Engine — a business-critical system driving customer quotes and downstream reporting. Owned feature development, infrastructure, and reliability. Built REST APIs in CakePHP; took on DevOps responsibility for the pricing infrastructure alongside feature work.</p>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="dot">·</span>
+            <span class="job-company">ZipDial Mobile Solution</span>
+          </div>
+          <span class="job-dates">Apr 2014 – Jan 2015</span>
+        </div>
+        <p>Built and maintained Managed Admin, the primary tool for campaign configuration, customer management, and KPI tracking. Worked closely with operations to translate workflow into product decisions.</p>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="dot">·</span>
+            <span class="job-company">StrApp Business Solution Pvt Ltd</span>
+          </div>
+          <span class="job-dates">Mar 2011 – Apr 2014</span>
+        </div>
+        <p>Full-stack development across e-commerce and logistics client projects. Took increasing ownership of feature scoping and technical decisions over 3 years.</p>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">PHP Developer</span>
+            <span class="dot">·</span>
+            <span class="job-company">Snyxius</span>
+          </div>
+          <span class="job-dates">Jul 2009 – Jun 2010</span>
+        </div>
+        <p>Built client-facing web applications in PHP. Foundation in web development, database design, and professional version control.</p>
+      </div>
+    </section>
+
+    <hr class="divider"/>
+
+    <section>
+      <h2>Key Projects</h2>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">Cloud-Native Filesystem Modernization</span>
+          <span class="project-tech">Go, Terraform, GCP Cloud Storage, Kubernetes</span>
+        </div>
+        <p>Technical lead and execution owner at Pantheon. Architecture, quarterly roadmap sequencing, cross-team coordination, and hands-on delivery. 30% reduction in operational overhead. 2 of 3 mentored engineers now doing lead-level work independently.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">Decoupled Microservices Platform</span>
+          <span class="project-tech">Go, Terraform, Cloud Run, Datastore, Docker</span>
+        </div>
+        <p>Backend microservices managing and orchestrating customer environments at scale. Monorepo tagging strategy simplified CI/CD and cut manual steps in a critical release process by 60%.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">AAMC.org Enterprise CMS</span>
+          <span class="project-tech">Drupal 8/9, MySQL, Acquia BLT, Google Data Studio</span>
+        </div>
+        <p>Led development and launch with a distributed team of 8 — accountable for technical quality and client milestone delivery. Content migration from CoreMedia/Django, Solr-backed search, and analytics integration.</p>
+      </div>
+    </section>
+
+    <hr class="divider"/>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-block">
+        <span class="skills-label">Leadership: </span>
+        <span class="skills-values">Team Leadership and Mentoring, Technical Roadmapping, Cross-functional Collaboration, Agile and Scrum Delivery, Engineering Quality and Process</span>
+      </div>
+      <div class="skills-block">
+        <span class="skills-label">Technical: </span>
+        <span class="skills-values">Go, Kubernetes, Terraform, Docker, AWS, GCP, GitHub Actions, PostgreSQL, Redis, MySQL, Git</span>
+      </div>
+    </section>
+
+    <hr class="divider"/>
+
+    <div class="two-col">
+      <section>
+        <h2>Education</h2>
+        <div class="edu-degree">BE in Computer Science</div>
+        <div class="edu-school">Dr. Babasaheb Ambedkar Marathwada University of Aurangabad</div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <div class="cert-item">
+          <div class="cert-name">AWS Certified Cloud Practitioner</div>
+          <div class="cert-issuer">Amazon Web Services</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Version Control using Git</div>
+          <div class="cert-issuer">Coursera</div>
+        </div>
+      </section>
+    </div>
+
+  </div><!-- end page 2 -->
+
+</div><!-- end resume-wrapper -->
+</body>
+</html>
