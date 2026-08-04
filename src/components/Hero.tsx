@@ -8,7 +8,7 @@ type HeroProps = {
   title: string
   email: string
   location: string
-  phone: string
+  phone?: string
   github: string
   githubWork?: string
   linkedin: string
@@ -57,10 +57,12 @@ const Hero = ({
               <MapPin className="w-4 h-4" />
               {location}
             </span>
-            <span className="flex items-center gap-1">
-              <Phone className="w-4 h-4" />
-              {phone}
-            </span>
+            {phone && (
+              <span className="flex items-center gap-1">
+                <Phone className="w-4 h-4" />
+                {phone}
+              </span>
+            )}
           </div>
 
           <div className="flex gap-4 justify-center md:justify-start mt-4 social-icons">
