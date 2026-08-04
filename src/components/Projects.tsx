@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code } from "lucide-react";
+import { Layers } from "lucide-react";
 import SectionTitle from "./SectionTitle";
 import {
   Card,
@@ -18,7 +18,7 @@ type Project = {
 
 const Projects = ({ projects }: { projects: Project[] }) => (
   <section>
-    <SectionTitle title="Projects" icon={Code} />
+    <SectionTitle title="Engineering Initiatives" icon={Layers} subtitle="Selected projects — framed around team, delivery, and org impact." />
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {projects.map((project, index) => (
         <motion.div
