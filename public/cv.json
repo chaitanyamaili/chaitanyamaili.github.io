@@ -96,6 +96,12 @@
       "title": "AAMC Internal Microsite Platform",
       "description": "Designed a multi-site platform enabling business teams to launch branded internal microsites without engineering involvement each time. Custom content types, per-site theming, and site-specific assets via Drupal Domain Access. Reduced new-site launch time from 3 weeks to 2 days - a direct improvement to team productivity.",
       "tech": "Drupal 9, MySQL, Docker, Acquia BLT"
+    },
+    {
+      "title": "Engineering Blog Platform",
+      "description": "Built a technical blog with a custom series system for multi-part long-form writing. Includes series navigation, per-post share panels, and a series landing page. Three active series covering Kubernetes Gateway API, Generative AI in production, and open-source LLM evaluation - used to demonstrate technical leadership thinking in public.",
+      "tech": "Astro, TypeScript, Tailwind CSS, GitHub Actions",
+      "link": "https://chaitanyamaili.in/blogs/"
     }
   ],
   "education": [

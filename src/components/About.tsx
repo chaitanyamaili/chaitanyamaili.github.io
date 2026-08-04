@@ -17,13 +17,13 @@ const About = ({ aboutMe }: AboutProps) => {
         transition={{ duration: 0.4 }}
         className="bg-card p-6 rounded-lg border border-border shadow-md"
       >
-        <ul className="list-disc list-inside text-muted-foreground space-y-2 print:text-black print:text-[11pt] print:leading-[1.4]">
+        <div className="space-y-4 text-muted-foreground print:text-black print:text-[11pt] print:leading-[1.4]">
           {paragraphs.map((para, i) => (
-            <li key={i} className="leading-relaxed">
+            <p key={i} className="leading-relaxed">
               {para}
-            </li>
+            </p>
           ))}
-        </ul>
+        </div>
       </motion.div>
     </section>
   );

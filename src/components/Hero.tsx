@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter, BookOpen } from "lucide-react"
+import { Mail, MapPin, Phone, Github, Linkedin, Twitter, BookOpen, Building2 } from "lucide-react"
 import IconLink from "./IconLink"
 import ThemeToggle from "./ThemeToggle"
 
@@ -68,21 +68,33 @@ const Hero = ({
           <div className="flex gap-4 justify-center md:justify-start mt-4 social-icons">
             <IconLink href={github} icon={Github} label="GitHub" />
             {githubWork && (
-              <a
-                href={githubWork}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub (Work)"
-                className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-1"
-              >
-                <Github className="w-5 h-5" />
-                <span className="text-xs font-medium">Work</span>
-              </a>
+              <IconLink href={githubWork} icon={Building2} label="GitHub (Work)" />
             )}
             <IconLink href={linkedin} icon={Linkedin} label="LinkedIn" />
             {twitter && <IconLink href={twitter} icon={Twitter} label="Twitter" />}
             <IconLink href="https://chaitanyamaili.in/blogs/" icon={BookOpen} label="Blog" />
             <ThemeToggle />
+          </div>
+
+          <div className="flex gap-3 justify-center md:justify-start mt-4">
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              <Linkedin className="w-4 h-4" />
+              Let's connect
+            </a>
+            <a
+              href="https://chaitanyamaili.in/blogs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium hover:bg-accent transition-colors"
+            >
+              <BookOpen className="w-4 h-4" />
+              Read my writing
+            </a>
           </div>
         </div>
       </header>
