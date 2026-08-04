@@ -8,6 +8,8 @@ import WorkExperience from "./components/WorkExperience"
 import Education from "./components/Education"
 import ContactForm from "./components/ContactForm"
 import Certificate from "./components/Certificates"
+import LeadershipImpact from "./components/LeadershipImpact"
+import BlogSection from "./components/BlogSection"
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -20,7 +22,7 @@ type CVData = {
   title: string
   email: string
   location: string
-  phone: string
+  phone?: string
   github: string
   githubWork?: string
   linkedin: string
@@ -51,6 +53,21 @@ type CVData = {
     link?: string
   }[]
   skills: string[]
+  leadership?: {
+    stats: {
+      value: string
+      label: string
+      sub?: string
+    }[]
+    highlights: string[]
+  }
+  blogSeries?: {
+    title: string
+    description: string
+    parts: number
+    url: string
+    tags: string[]
+  }[]
 }
 
 function App() {
@@ -86,6 +103,12 @@ function App() {
         <About aboutMe={cvData.aboutMe} />
       </motion.div>
 
+      {cvData.leadership && (
+        <motion.div {...fadeIn}>
+          <LeadershipImpact leadership={cvData.leadership} />
+        </motion.div>
+      )}
+
       <motion.div {...fadeIn}>
         <Skills skills={cvData.skills} />
       </motion.div>
@@ -97,6 +120,12 @@ function App() {
       <motion.div {...fadeIn}>
         <Projects projects={cvData.projects} />
       </motion.div>
+
+      {cvData.blogSeries && cvData.blogSeries.length > 0 && (
+        <motion.div {...fadeIn}>
+          <BlogSection blogSeries={cvData.blogSeries} />
+        </motion.div>
+      )}
 
       <motion.div {...fadeIn}>
         <Education education={cvData.education} />

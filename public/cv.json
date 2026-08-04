@@ -134,5 +134,43 @@
     "Redis",
     "MySQL",
     "Git"
+  ],
+  "leadership": {
+    "stats": [
+      { "value": "15 yrs", "label": "Engineering Experience", "sub": "IC to tech lead to manager" },
+      { "value": "10+", "label": "Engineers Led", "sub": "directly managed at Mindtree" },
+      { "value": "3", "label": "Engineers Mentored", "sub": "2 promoted to lead at Pantheon" },
+      { "value": "2+", "label": "Years as Tech Lead", "sub": "roadmap, delivery, cross-team" }
+    ],
+    "highlights": [
+      "Owned the technical roadmap and quarterly sequencing for Pantheon's multi-year filesystem migration — accountable to engineering leadership for delivery and team output.",
+      "Grew 2 engineers from individual contributors to independently scoped lead work within 18 months, through deliberate design review, 1:1 coaching, and incremental ownership transfer.",
+      "Led a 10-member team at Mindtree across 4 concurrent enterprise engagements — responsible for sprint planning, code quality, client relationships, and delivery milestones.",
+      "Introduced CI quality processes (visual regression testing, static analysis) that reduced production bugs by 40% — a team-level culture change, not just a tooling addition.",
+      "Regularly represented engineering work to non-technical stakeholders and leadership: roadmap reviews, incident postmortems, cross-team dependency negotiations."
+    ]
+  },
+  "blogSeries": [
+    {
+      "title": "Kubernetes API Gateway in Production",
+      "description": "From ingress-nginx EOL to Gateway API: implementation choice, real benchmarks, Kong, AWS integration, and migration patterns.",
+      "parts": 3,
+      "url": "https://chaitanyamaili.in/blogs/series/kubernetes-api-gateway-in-production/",
+      "tags": ["Kubernetes", "Platform Engineering", "Cloud Native"]
+    },
+    {
+      "title": "Generative AI in Production",
+      "description": "How LLMs actually work, prompt engineering, RAG, agents, evals, and cost trade-offs — written for engineers shipping AI systems, not researchers.",
+      "parts": 1,
+      "url": "https://chaitanyamaili.in/blogs/series/generative-ai-in-production/",
+      "tags": ["AI", "LLMs", "Platform Engineering"]
+    },
+    {
+      "title": "Open Source vs Closed LLMs",
+      "description": "Llama, Mixtral, Qwen vs GPT-4o, Claude, Gemini — benchmarks vs reality, TCO, privacy, fine-tuning, and how to actually decide.",
+      "parts": 1,
+      "url": "https://chaitanyamaili.in/blogs/series/open-source-vs-closed-llms/",
+      "tags": ["AI", "Open Source", "LLMs"]
+    }
   ]
 }
