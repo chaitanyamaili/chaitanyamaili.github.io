@@ -8,28 +8,28 @@
   "linkedin": "https://www.linkedin.com/in/chaitanyamaili/",
   "twitter": "",
   "profilePicture": "profile.png",
-  "aboutMe": "I have spent 15 years building distributed systems, and the last several years realizing the most valuable thing I can do is ensure the right people are writing code well, growing through it, and owning the outcome.\n\nAt Pantheon I am the technical lead for a multi-year cloud-native filesystem migration: I set the architecture, coordinate across teams, mentor the engineers doing the work, and represent the project to engineering leadership. That is not a description of an individual contributor role - it is the job of an engineering manager, without the title.\n\nAt Mindtree I led a 10-member team across multiple enterprise projects. I ran sprints, drove quality improvements that cut production bugs by 40%, managed client relationships, and owned execution end to end.\n\nThe pattern across my career: I gravitate toward the ownership and people parts of technical leadership. I want to make that my full-time job.\n\nI am targeting Engineering Manager roles in cloud-native, developer tools, or platform infrastructure - environments where deep technical context matters for the people decisions, not just the architecture ones.",
+  "aboutMe": "15 years building distributed systems at scale. For the last several years I have been functioning as the engineering manager of record for Pantheon's cloud-native infrastructure initiatives — owning architecture decisions, delivery sequencing, cross-team coordination, and the career growth of the engineers doing the work.\n\nAt Pantheon I set the architecture for a multi-year filesystem migration, coordinate across teams, manage the engineers doing the work, and represent the project to engineering leadership. Weekly 1:1s, performance conversations, design reviews, and incremental ownership transfer are the core of how I run the team.\n\nAt Mindtree I managed a 10-member team across concurrent enterprise projects. I ran sprints, conducted performance reviews, participated in hiring, drove quality improvements that cut production bugs by 40%, and owned client relationships end to end.\n\nCloud-native platform infrastructure is where my technical depth and people leadership intersect. That is the environment where I do my best work as an engineering manager.",
   "workExperience": [
     {
-      "title": "Staff Engineer",
+      "title": "Staff Engineer · Technical Lead & People Manager",
       "company": "Pantheon.io",
       "dates": "Jun 2022 - Present",
       "description": [
-        "Technical lead for Pantheon's cloud-native filesystem modernization - a multi-year initiative migrating legacy storage to GCP Cloud Storage on Kubernetes. Defined the architecture, sequenced execution across quarters, and coordinated dependencies with platform and product teams. The project is on track to eliminate a long-standing reliability bottleneck and reduce operational overhead by an estimated 30%.",
-        "Mentoring a team of 3 engineers through the full complexity of the project: scoping ambiguous problems, navigating design trade-offs, and building confidence presenting technical decisions to non-technical stakeholders. Two engineers have since taken on independently scoped lead work they were not doing when the project started.",
-        "Partnering with engineering leadership on roadmap sequencing, cross-team technical alignment, and capacity planning. Regularly representing the team's architecture decisions in leadership reviews.",
-        "Designed and shipped backend microservices and infrastructure-as-code in Go and Terraform, focusing on observability, reliability, and reducing the operational surface area for on-call engineers."
+        "Engineering manager in function for Pantheon's cloud-native filesystem migration — owned architecture decisions, quarterly roadmap sequencing, cross-team dependency management, and delivery accountability to engineering leadership. On track to reduce operational overhead by 30%.",
+        "Managed 3 engineers through the full complexity of the project: weekly 1:1s, performance conversations, design reviews, and deliberate ownership transfer. 2 engineers have since taken on independently scoped lead work; one is now functioning as a tech lead.",
+        "Partnered with engineering leadership on headcount planning, roadmap sequencing, and cross-team technical alignment. Represented team architecture and delivery status in leadership reviews.",
+        "Contributed hands-on in Go and Terraform — backend microservices and infrastructure-as-code focused on observability, reliability, and reducing operational surface area for on-call engineers."
       ]
     },
     {
-      "title": "Technical Architect",
+      "title": "Engineering Manager / Technical Architect",
       "company": "Mindtree",
       "dates": "Jun 2018 - May 2022",
       "description": [
-        "Led a 10-member development team across concurrent enterprise Drupal 8 and Drupal 9 engagements - accountable for technical direction, sprint planning, code quality, and execution against client commitments.",
-        "Drove process improvements with measurable results: introduced visual regression testing in CI (40% reduction in production UI bugs post-deployment) and static analysis via PHPMD, establishing code quality standards the team maintained independently.",
-        "Owned full-lifecycle migration of a major enterprise site to Drupal - from scoping and estimation through launch, coordinating with client stakeholders throughout to minimize disruption to the live site.",
-        "Built project health reporting via Google Data Studio, giving both technical leads and business stakeholders visibility into quality trends and milestone progress."
+        "Managed a 10-member development team across concurrent enterprise Drupal 8/9 engagements — accountable for technical direction, sprint planning, code quality, hiring decisions, and delivery against client commitments.",
+        "Conducted regular 1:1s, performance reviews, and career development conversations with direct reports. Participated in hiring loops and ran structured onboarding for new engineers.",
+        "Introduced visual regression testing in CI and static analysis via PHPMD — reduced production UI bugs by 40% post-deployment. A team-level culture change, not just a tooling addition.",
+        "Owned full-lifecycle migration of a major enterprise site from CoreMedia to Drupal — scoping through launch, coordinating with client stakeholders throughout to minimise disruption."
       ]
     },
     {
@@ -79,7 +79,7 @@
   "projects": [
     {
       "title": "Cloud-Native Filesystem Modernization - Pantheon",
-      "description": "Technical lead and execution owner for Pantheon's flagship infrastructure initiative: migrating a legacy filesystem to GCP Cloud Storage on Kubernetes. Responsible for architecture, cross-team coordination, quarterly roadmap sequencing, and hands-on implementation. Mentored 3 engineers through the project; 2 have since taken on lead-level work independently. Delivered meaningful reliability improvements and an estimated 30% reduction in operational overhead.",
+      "description": "Technical lead and people manager for Pantheon's flagship infrastructure initiative: migrating a legacy filesystem to GCP Cloud Storage on Kubernetes. Responsible for architecture, cross-team coordination, quarterly roadmap sequencing, and hands-on implementation. Managed 3 engineers through the project; 2 have since taken on independently scoped lead-level work. Delivered meaningful reliability improvements and an estimated 30% reduction in operational overhead.",
       "tech": "Go, Terraform, Docker, GCP Cloud Storage, Kubernetes"
     },
     {
@@ -124,11 +124,15 @@
     }
   ],
   "skills": [
-    "Team Leadership and Mentoring",
+    "People Management",
+    "Performance Management and Career Development",
+    "Hiring and Recruiting",
+    "Engineering Team Leadership",
     "Technical Roadmapping",
-    "Cross-functional Collaboration",
+    "Cross-functional Stakeholder Management",
     "Agile and Scrum Delivery",
     "Engineering Quality and Process",
+    "Incident Management",
     "Go",
     "Kubernetes",
     "Terraform",
